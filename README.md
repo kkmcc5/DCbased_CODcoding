@@ -26,11 +26,11 @@ This Python program uses serial keyword searches and overlaid logic to sort deat
 - MUTUALLY EXCLUSIVE SORTING
   This function sorts each record into a single cause of death category.
   If a death meets criteria for multiple categories, the following priorities are used:
-  - Accidental deaths: Overdose > Heat-Related > Cold-Related > Other Accidental Injury
-  - Natural deaths: Heart Disease > Other Illness
+    Accidental deaths: Overdose > Heat-Related > Cold-Related > Other Accidental Injury
+    Natural deaths: Heart Disease > Other Illness
   Results are found in the 'COD' column. Refer to the mutually exclusive sorting section 
   of the raw code for the number associated with each death category.
-Considerations:
+  Considerations:
   - All deaths of undetermined/unknown manner are sorted into the Unknown category with this function.
   - Ensure to review and manually sort records that returned "True" in the 'MANUAL' column as the algorithm was not able to sort those.
   
