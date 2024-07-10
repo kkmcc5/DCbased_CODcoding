@@ -18,9 +18,10 @@ This Python program uses serial keyword searches and overlaid logic to sort deat
   Results are returned as True/False for each record in a column corresponding to each death category. 
   Results are found in columns titled 'FINAL_CATEGORY_UNK' which indicates that unknown records were searched.
   The exception is the 'FINAL_ALL_OD' returns the results for all cause identification of overdoses.
-  *This coding method will include deaths of unknown manner
-  *This coding method may identify multiple death categories for one record if criteria for multiple categories are met.
-  *Ensure to review and manually sort records that returned "True" in the 'MANUAL' column as the algorithm was not able to sort those.
+  Considerations:
+  - This coding method will include deaths of unknown manner
+  - This coding method may identify multiple death categories for one record if criteria for multiple categories are met.
+  - Ensure to review and manually sort records that returned "True" in the 'MANUAL' column as the algorithm was not able to sort those.
   
 - MUTUALLY EXCLUSIVE SORTING
   This function sorts each record into a single cause of death category.
@@ -29,8 +30,9 @@ This Python program uses serial keyword searches and overlaid logic to sort deat
     - Natural deaths: Heart Disease > Other Illness
   Results are found in the 'COD' column. Refer to the mutually exclusive sorting section 
   of the raw code for the number associated with each death category.
-  ** All deaths of undetermined/unknown manner are sorted into the Unknown category with this function.
-  ** Ensure to review and manually sort records that returned "True" in the 'MANUAL' column as the algorithm was not able to sort those.
+  Considerations:
+  - All deaths of undetermined/unknown manner are sorted into the Unknown category with this function.
+  - Ensure to review and manually sort records that returned "True" in the 'MANUAL' column as the algorithm was not able to sort those.
   
 
 ## Usage
