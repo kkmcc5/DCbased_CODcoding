@@ -1,7 +1,7 @@
 # DCbased_CODcoding
 Text-based Death Certificate Categorization and Coding
 
-This Python program uses serial keyword searches and overlaid logic to sort death record data into Cause of Death categories useful in public health monitoring and research. The death categories included in the base keywords and program code are Overdose, Environmental Heat Related, Environmental Cold Related, Other Accidental Injury, Firearm Injury, Cardiovascular Disease, Other Illness, and Undetermined. There is a supplemental Excel formula described at the end of this file that allows a user to extract one of the basic steps of this program to be performed in Excel (best for users that only desire to identify deaths of one category).
+This Python program uses serial keyword searches and overlaid logic to sort death record data into Cause of Death categories useful in public health monitoring and research. The death categories included in the base keyword lists and program code are Overdose, Environmental Heat Related, Environmental Cold Related, Other Accidental Injury, Firearm Injury, Cardiovascular Disease, Other Illness, and Undetermined. There is a supplemental Excel formula described at the end of this file that allows a user to extract one of the basic steps of this program to be performed in Excel (best for users that only desire to identify deaths of one category).
 
 
 ### Prerequisites
@@ -29,8 +29,8 @@ This Python program uses serial keyword searches and overlaid logic to sort deat
     - Natural deaths: Heart Disease > Other Illness
   Results are found in the 'COD' column. Refer to the mutually exclusive sorting section 
   of the raw code for the number associated with each death category.
-  *All deaths of undetermined/unknown manner are sorted into the Unknown category with this function.
-  *Ensure to review and manually sort records that returned "True" in the 'MANUAL' column as the algorithm was not able to       sort those.
+  ** All deaths of undetermined/unknown manner are sorted into the Unknown category with this function.
+  ** Ensure to review and manually sort records that returned "True" in the 'MANUAL' column as the algorithm was not able to sort those.
   
 
 ## Usage
